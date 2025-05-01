@@ -1,0 +1,22 @@
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #3c3c43 15%, #338ad5);
+}
+
+@media (min-width: 960px) {
+    .image-src {
+        max-width: 500px !important;
+        max-height: 500px !important;
+    }
+}
+
+/* @media (min-width: 640px) {
+    .image-src {
+        max-width: 320px !important;
+        max-height: 320px !important;
+    }
+} */
+
+.profile .avatar {
+    box-shadow: none !important;
+}

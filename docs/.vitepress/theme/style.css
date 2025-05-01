@@ -1,0 +1,84 @@
+
+/* 引入 Fluent UI 核心样式 */
+/* @import '@fluentui/web-components/dist/fluent-components.css'; */
+
+/* 颜色系统 */
+:root {
+  /* Fluent 中性色 */
+  --vp-c-bg: #f3f2f1;          /* 背景色 */
+  --vp-c-text: #323130;        /* 主文本色 */
+  
+  /* 品牌色 */
+  --vp-c-brand: #0078D4;       /* 主品牌色 */
+  --vp-c-brand-light: #50B6FF; 
+  --vp-c-brand-dark: #004578;
+
+  /* 按钮 */
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+
+  /* 边框 */
+  --vp-c-divider: #edebe9;
+  
+  /* 圆角 */
+  --vp-border-radius: 4px;     /* Fluent 标准圆角 */
+}
+
+/* 暗黑模式适配 */
+.dark {
+  --vp-c-bg: #201f1e;
+  --vp-c-text: #ffffff;
+  --vp-c-divider: #3b3a39;
+}
+
+/* 使用 Segoe UI 字体（需用户本地安装） */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;            /* Fluent 标准字号 */
+  line-height: 1.5;
+}
+
+/* 标题样式 */
+h1 { font-size: 28px; font-weight: 600; }
+h2 { font-size: 20px; font-weight: 600; }
+
+/* 代码块 */
+.vp-doc pre {
+  background: #f8f8f8 !important;
+  border: 1px solid #edebe9;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.dark .vp-doc pre {
+  background: #292827 !important;
+  border-color: #3b3a39;
+}
+
+/* 表格 */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc td, .vp-doc th {
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 12px;
+}
+
+.fluent-note {
+  background: rgba(0, 120, 212, 0.1);
+  border-left: 4px solid var(--vp-c-brand);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+/* 自定义覆盖样式 */
+fluent-button {
+  margin: 8px;
+}
+
+.fluent-dialog {
+  --dialog-width: 500px;
+}
